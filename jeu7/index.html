@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>🗿Jeux🎮</title>
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<h1> 🌠ScoreFall🗿  </h1>
+	<p> score :  <span id="score">0</span> </p>
+
+
+    <!--  zone de jeu ci-dessous avec les 2 rectangles-->
+	<div id  ="zoneJeu"> 
+	
+		<div id="ennemi">🌟</div>
+		<div id="joueur">🔳</div>	   
+	   
+    </div>
+	
+	
+	<div id="ecranFin" style="display:none;">
+		<h2 id="messageFin"></h2>
+		<button onclick="rejouer()">Rejouer</button>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<!--  zone de jeu ci-dessous avec les 2 boutons-->
+	<div id  ="commandes"> 
+       
+	    <button id="gauche">⬅️gauche</button>
+		<button id="droite">droite➡️</button>
+	   
+    </div>
+	
+	<div id  ="niveau"> 
+	
+		<button onclick="changerNiveau(1)">🪶Facile</button>
+		<button onclick="changerNiveau(2)">🎣Moyen</button>
+		<button onclick="changerNiveau(3)">🕹️Difficile</button>	   
+	   
+    </div>
+	
+	
+	
+	<button id="musicBtn">🎵 MUSIC</button>
+	
+	
+<!-- Musique -->
+<audio id="music" loop>
+  <source src="Wham! - Last Christmas (Official Video).mp3" type="audio/mpeg">
+</audio>	
+
+<script src="script.js"></script>
+</body>
+</html>
